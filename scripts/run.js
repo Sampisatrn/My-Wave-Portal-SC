@@ -16,7 +16,7 @@ const main = async () => {
   // Esto ayuda a reiniciar el servidor y depurar errores.
   const waveContract = await waveContractFactory.deploy({
     // financio mi contrato con 0.1 ETH
-    value: hre.ethers.utils.parseEther("0.1"),
+    value: hre.ethers.utils.parseEther("0.01"),
   });
   
   //> Espera a que el contrato se termine de deployar.
